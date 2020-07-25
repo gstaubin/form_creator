@@ -1,0 +1,217 @@
+{
+    "VERSION": "0.0.1",
+    "nodes": {
+        "56": {
+            "type": "choice",
+            "pos": [
+                15877.0,
+                16029.0
+            ],
+            "wh": [
+                200,
+                140
+            ],
+            "root": true,
+            "question": "Avez-vous faim?",
+            "focus_answer": 1,
+            "options": {},
+            "answers": [
+                "Oui",
+                "Non"
+            ],
+            "outputs": {
+                "5": 0,
+                "9": 0,
+                "46": 0
+            }
+        },
+        "5": {
+            "type": "choice",
+            "pos": [
+                16233.0,
+                15934.0
+            ],
+            "wh": [
+                200,
+                140
+            ],
+            "root": false,
+            "question": "Avez-vous des allergies?",
+            "focus_answer": 1,
+            "options": {},
+            "answers": [
+                "Oui",
+                "Non"
+            ],
+            "outputs": {
+                "6": 0
+            }
+        },
+        "6": {
+            "type": "str_input",
+            "pos": [
+                16505.0,
+                15947.0
+            ],
+            "wh": [
+                200,
+                110
+            ],
+            "root": false,
+            "question": "Quelles sont vos allergies?",
+            "focus_answer": 0,
+            "options": {
+                "size": "6"
+            },
+            "answers": [
+                "Allergies"
+            ],
+            "outputs": {}
+        },
+        "7": {
+            "type": "checkbox",
+            "pos": [
+                16547.0,
+                16380.0
+            ],
+            "wh": [
+                200,
+                170
+            ],
+            "root": false,
+            "question": "Quel repas voulez-vous?",
+            "focus_answer": 2,
+            "options": {},
+            "answers": [
+                "De la pizza",
+                "Des sandwichs",
+                "Des pates"
+            ],
+            "outputs": {}
+        },
+        "9": {
+            "type": "checkbox",
+            "pos": [
+                16232.0,
+                16152.0
+            ],
+            "wh": [
+                200,
+                140
+            ],
+            "root": false,
+            "question": "Que voulez-vous manger?",
+            "focus_answer": 1,
+            "options": {},
+            "answers": [
+                "Du dessert",
+                "Un repas"
+            ],
+            "outputs": {
+                "7": 1,
+                "10": 0
+            }
+        },
+        "10": {
+            "type": "checkbox",
+            "pos": [
+                16550.0,
+                16147.0
+            ],
+            "wh": [
+                200,
+                170
+            ],
+            "root": false,
+            "question": "Quel d\u00e9ssert voulez-vous?",
+            "focus_answer": 2,
+            "options": {},
+            "answers": [
+                "De la cr\u00e8me glac\u00e9e",
+                "De la tarte aux pommes",
+                "De la tarte aux fraises"
+            ],
+            "outputs": {}
+        },
+        "11": {
+            "type": "choice",
+            "pos": [
+                15888.0,
+                16595.0
+            ],
+            "wh": [
+                200,
+                140
+            ],
+            "root": true,
+            "question": "Avez-vous soif?",
+            "focus_answer": 1,
+            "options": {},
+            "answers": [
+                "Oui",
+                "Non"
+            ],
+            "outputs": {
+                "13": 0
+            }
+        },
+        "13": {
+            "type": "checkbox",
+            "pos": [
+                16230.0,
+                16607.0
+            ],
+            "wh": [
+                200,
+                200
+            ],
+            "root": false,
+            "question": "Que voulez-vous boire?",
+            "focus_answer": 3,
+            "options": {},
+            "answers": [
+                "De l'eau",
+                "Du jus de pommes",
+                "Du 7up",
+                "Du caf\u00e9"
+            ],
+            "outputs": {}
+        },
+        "46": {
+            "type": "grade",
+            "pos": [
+                16234.0,
+                16356.0
+            ],
+            "wh": [
+                200,
+                110
+            ],
+            "root": false,
+            "question": "A quel point avez-vous faim?",
+            "focus_answer": 0,
+            "options": {
+                "grade": [
+                    1,
+                    10,
+                    1
+                ],
+                "comments": [
+                    "J'ai pas faim du tout",
+                    "Je boufferais un \u00e9l\u00e9phant"
+                ]
+            },
+            "answers": [
+                "Can still trigger new question"
+            ],
+            "outputs": {}
+        }
+    },
+    "roots": [
+        "56",
+        "11"
+    ],
+    "scene": {
+        "node_id": 74
+    }
+}
