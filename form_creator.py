@@ -10,7 +10,7 @@ from copy import deepcopy
 from style_sheet import STYLE
 
 
-VERSION = "0.0.2"
+VERSION = "0.0.1"
 
 
 def normalize(vector):
